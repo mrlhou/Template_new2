@@ -1,0 +1,173 @@
+
+/* Footer */
+
+footer{
+    background-color: #000;
+}
+
+li ,.desc ,i ,a{
+    color: #999;
+    text-transform: capitalize;
+}
+
+.footer-items{
+    display: grid;
+    grid-template-columns: 35% 20% 20% 20%;
+    padding: 70px 0;
+    grid-column-gap: 10px;
+}
+.item-logo img{
+    width: 40%;
+}
+.item-logo img:nth-last-child(1),.item-logo img:nth-last-child(2){
+    width: 30%;
+}
+.item-logo .desc{
+    margin: 20px 0;
+    line-height: 1.8;
+    padding-right: 20px;
+}
+
+.footer-items .item h3{
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.footer-items .item h3 i{
+    display: none;
+}
+
+.footer-items .item-information ul li  ,.footer-items .item-My_Account ul li{
+    margin: 20px 0;
+    transition: all .5s;
+}
+.footer-items .item:nth-of-type(2) ul li:hover  ,.footer-items .item:nth-of-type(3) ul li:hover{
+    text-decoration: underline;
+}
+
+.item-Subscribe .email{
+    margin: 40px 0 20px 0;
+    position: relative;
+}
+.item-Subscribe .email input{
+    border: none;
+    outline: none;
+    background-color: #000;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    color: #fff;
+}
+.item-Subscribe .email a{
+    position: absolute;
+    top: 0;
+    left: 90%;
+}
+.item-Subscribe ul{
+    margin: 30px 0;
+}
+.item-Subscribe ul li{
+    display: inline-block;
+}
+.item-Subscribe ul li{
+    padding: 10px;
+}
+.item-Subscribe ul li a i{
+    transition: color .5s;
+}
+.item-Subscribe .social li:nth-child(1) a:hover i{
+    color: #4267B2;
+}
+.item-Subscribe .social li:nth-child(2) a:hover i{
+    color: #1DA1F2;
+}
+.item-Subscribe .social li:nth-child(3) a:hover i{
+    color: #FF0000;
+}
+.item-Subscribe .social li:nth-child(4) a:hover i{
+    color: #25D366;
+}
+.item-Subscribe .social li:nth-child(5) a:hover i{
+    color: #C13584;
+}
+
+    /* paying */
+
+.paying{
+    border-top: 1px solid #999;
+    padding: 20px 40px;
+}
+.paying .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.paying .copyright{
+    align-items: center;
+}
+.paying .copyright h4{
+    color: #999;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.paying .copyright h4 a{
+    text-decoration: underline;
+}
+.card-icons{
+    text-align: right;
+}
+.card-icons a{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* Mobile 400px */
+
+@media screen and (max-width:400px) {
+    .footer-items{
+        grid-template-columns: 100%;
+        grid-row-gap: 15px;
+    }
+    .item-logo img{
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    .item-logo img:nth-last-child(1){
+        margin-bottom: 5px;
+    }
+    .footer-items .item h3{
+        position: relative;
+    }
+    .footer-items .item h3 i{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .footer-items .item-information ul,.footer-items .item-My_Account ul{
+        display: none;
+    }
+    .footer-items .item-Subscribe h3{
+        text-align: center;
+    }
+    .item-Subscribe .email input{
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+    .item-Subscribe .email a{
+        left: 80%;
+    }
+    .item-Subscribe ul{
+        text-align: center;
+    }
+    .paying .container{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        grid-row-gap: 10px;
+    }
+    .card-icons{
+        text-align:center;
+    }
+}

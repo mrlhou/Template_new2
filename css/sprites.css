@@ -1,0 +1,78 @@
+/* sprites */
+
+.sprites{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-bottom: 55px;
+}
+.sprites .sprite-item{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #999;
+}
+.sprites .sprite-item:last-child{
+    border: 0;
+}
+.sprite-icon{
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat
+}
+.sprite-icon-1{
+    background-position: center 5px;
+    transition: background-position .5s;
+}
+.sprite-item:hover .sprite-icon-1{
+    background-position: center -84px;
+} 
+.sprite-icon-2{
+    background-position: center -180px;
+    transition: background-position .5s;
+}
+.sprite-item:hover .sprite-icon-2{
+    background-position: center -270px;
+} 
+.sprite-icon-3{
+    background-position: center -364px;
+    transition: background-position .5s;
+}
+.sprite-item:hover .sprite-icon-3{
+    background-position: center -457px;
+} 
+.sprite-icon-4{
+    background-position: center -548px;
+    transition: background-position .5s;
+}
+.sprite-item:hover .sprite-icon-4{
+    background-position: center -641px;
+} 
+.sprite-icon-5{
+    background-position: center -730px;
+    transition: background-position .5s;
+}
+.sprite-item:hover .sprite-icon-5{
+    background-position: center -826px;
+} 
+.sprites .sprite-item-info .title{
+    text-transform: capitalize;
+}
+.sprites .sprite-item-info .description{
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+
+/* Mobile 400px*/
+
+@media screen and (max-width:400px) {
+    .sprites{
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 55px;
+    }
+}

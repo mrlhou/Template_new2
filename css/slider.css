@@ -1,0 +1,42 @@
+/* SLider -section */
+
+section.slider img{
+    width: 100%;
+}
+.slider-content{
+    position: relative;
+}
+.slider-content .points a{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0,0);
+    transition: transform .5s , visibility .5s;
+}
+.slider-content .points a:first-child{
+    left: 48.5%;
+    background-color: #fff;
+}
+.slider-content .points a:last-child{
+    left: 50%;
+    background-color: #333;
+}
+.slider-content:hover .points a{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+@media screen and (max-width:400px) {
+    .slider-content .points a:first-child{
+        left: 47.5%;
+    }
+    .slider-content .points a:last-child{
+        left: 51.5%;
+    }
+    
+}

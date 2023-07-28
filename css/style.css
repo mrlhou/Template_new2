@@ -1,0 +1,138 @@
+/* 
+        Reference :
+
+    1- General section
+    2- Header section
+    3- SLider section
+    4- Category section
+    5- Products section
+    6-Footer section 
+
+*/
+
+/* General section */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* css3 */
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+:root{
+    --mainColor:#7b5244;
+    --subColor:#333;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.list-unstyled{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.pd-y{
+    padding: 40px 0;
+}
+.section-header{
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.section-header .section-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.section-header .section-line{
+    background-color: var(--mainColor);
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: auto;
+    transition: width .5s;
+}
+
+.lines-dropdowns{
+    display: none;
+}
+
+
+ /* Mobile 400px */
+
+@media screen and (max-width:400px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100%;
+    }
+    header .header-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-content img{
+        display: block;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .header-content nav{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header-content nav ul li{
+        display: block;
+        text-align: center;
+    }
+    .header-content .login{
+        display: block;
+    }
+
+    /* menu in mobile */
+
+.lines-dropdowns{
+    margin: 15px auto;
+    display: block;
+}
+.lines-dropdowns ul li{
+    display: none;
+}
+.lines-dropdowns .line-drop{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 1px;
+    transition: transform .5s;
+}
+.line-drop-1{
+    transform: rotate(-45deg) translate(-20%, -50%);
+}
+.line-drop-3{
+    transform: rotate(45deg) translate(-35%, -33%);
+}
+.line-drop-2{
+    opacity: 0;
+    visibility: hidden;
+}
+nav.navbar ul li{
+    display: none;
+}
+.header-content nav ul:not(.Dropdown-menu) li .link-item{
+    display: block;
+}
+.Dropdown-menu{
+    top: 0;
+}
+}
+
+
+
+
+
+
+
+
